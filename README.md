@@ -13,7 +13,7 @@ Además, asegúrese de que el servidor de la API de League of Legends esté en l
 Para ejecutar el programa, simplemente ejecute el archivo random_items.py:
 
 ```
-python random_items.py
+python build.py
 ```
 El programa seleccionará aleatoriamente cinco objetos que cuesten más de 2000 de oro y los imprimirá en la consola junto con su nombre y costo total. Además, seleccionará aleatoriamente un objeto de una lista predefinida e imprimirá su nombre como el sexto elemento.
 
