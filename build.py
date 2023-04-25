@@ -6,7 +6,7 @@ response = requests.get("http://ddragon.leagueoflegends.com/cdn/13.8.1/data/es_M
 data = json.loads(response.text)
 
 for i in range(5):
-    filtered_items = [item for item in data["data"].values() if "name" in item and "gold" in item and item["gold"]["total"] > 2000 and "inStore" not in item["name"] or "inStore" == True]
+    filtered_items = [item for item in data["data"].values() if "name" in item and "gold" in item and item["gold"]["total"] > 2000 and "inStore" == True or "inStore" not in data["data"]]
     if filtered_items:
         selected_item = random.choice(filtered_items)
         if selected_item == selected_item:
